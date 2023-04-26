@@ -1,0 +1,51 @@
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle'
+        classpath 'com.novoda:bintray-release:0.8.1'
+        classpath 'digital.wup:android-maven-publish:3.6.2'
+        classpath 'com.android.tools.build:gradle:7.1.2'
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 33
+    buildToolsVersion "33.0.0"
+
+    defaultConfig {
+        minSdkVersion 23
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+    }
+    lintOptions {
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+    google()
+}
+
+dependencies {
+    compileOnly 'com.facebook.react:react-native:+'
+
+    // imqa
+    compileOnly 'io.imqa:imqa-core:2.27.0'
+    compileOnly 'io.imqa:imqa-mpm-client:2.27.2'
+    compileOnly 'io.imqa:imqa-crash-client:2.27.0'
+}
+  
