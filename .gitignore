@@ -1,3 +1,8 @@
 # node.js
 node_modules/
 package-lock.json
+
+ios/Pods/
+ios/Podfile.lock
+.DS_Store
+yarn.lock

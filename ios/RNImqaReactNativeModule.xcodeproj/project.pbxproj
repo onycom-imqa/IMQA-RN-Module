@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7672D0350B9FE6FDE89390F7 /* Pods_RNImqaReactNativeModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687AB3DE1AB5F7D67F7BFFC4 /* Pods_RNImqaReactNativeModule.framework */; };
 		B3E7B58A1CC2AC0600A0062D /* RNImqaReactNativeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNImqaReactNativeModule.m */; };
 /* End PBXBuildFile section */
 
@@ -24,8 +25,11 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNImqaReactNativeModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNImqaReactNativeModule.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		687AB3DE1AB5F7D67F7BFFC4 /* Pods_RNImqaReactNativeModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNImqaReactNativeModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNImqaReactNativeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNImqaReactNativeModule.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNImqaReactNativeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNImqaReactNativeModule.m; sourceTree = "<group>"; };
+		CACFA7BEC3BFF9B6241DDEAC /* Pods-RNImqaReactNativeModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNImqaReactNativeModule.debug.xcconfig"; path = "Target Support Files/Pods-RNImqaReactNativeModule/Pods-RNImqaReactNativeModule.debug.xcconfig"; sourceTree = "<group>"; };
+		CB8FB1C5A5C225EDD66A1A7B /* Pods-RNImqaReactNativeModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNImqaReactNativeModule.release.xcconfig"; path = "Target Support Files/Pods-RNImqaReactNativeModule/Pods-RNImqaReactNativeModule.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7672D0350B9FE6FDE89390F7 /* Pods_RNImqaReactNativeModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +58,26 @@
 				B3E7B5881CC2AC0600A0062D /* RNImqaReactNativeModule.h */,
 				B3E7B5891CC2AC0600A0062D /* RNImqaReactNativeModule.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				E11E7EB1D51DAC76ACD20DEC /* Pods */,
+				9258E48D418AE39975C6256E /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		9258E48D418AE39975C6256E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				687AB3DE1AB5F7D67F7BFFC4 /* Pods_RNImqaReactNativeModule.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E11E7EB1D51DAC76ACD20DEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CACFA7BEC3BFF9B6241DDEAC /* Pods-RNImqaReactNativeModule.debug.xcconfig */,
+				CB8FB1C5A5C225EDD66A1A7B /* Pods-RNImqaReactNativeModule.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -63,6 +87,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNImqaReactNativeModule" */;
 			buildPhases = (
+				B0E998E00877FD4CF50E4133 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -95,6 +120,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
@@ -106,6 +132,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B0E998E00877FD4CF50E4133 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNImqaReactNativeModule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -202,13 +253,13 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CACFA7BEC3BFF9B6241DDEAC /* Pods-RNImqaReactNativeModule.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../node_modules/react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNImqaReactNativeModule;
@@ -218,13 +269,13 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB8FB1C5A5C225EDD66A1A7B /* Pods-RNImqaReactNativeModule.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../node_modules/react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNImqaReactNativeModule;
