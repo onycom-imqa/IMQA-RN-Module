@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
                    DESC
   s.homepage     = ""
   s.license      = "AGPL-3.0"
-  s.author             = { "author" => "author@domain.cn" }
+  s.author             = { "author" => "admin@imqa.io" }
   s.platform     = :ios, "11.0"
   s.source       = { :git => "https://github.com/author/RNImqaReactNativeModule.git", :tag => "master" }
   s.source_files  = "RNImqaReactNativeModule/**/*.{h,m}"
