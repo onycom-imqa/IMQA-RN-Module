@@ -50,7 +50,7 @@ dependencies {
 //    compileOnly 'io.imqa:imqa-core:2.27.0'
 //    compileOnly 'io.imqa:imqa-mpm-client:2.27.2'
     compileOnly 'io.imqa:imqa-core:2.27.1.rn-render4'
-    compileOnly 'io.imqa:imqa-mpm-client:2.27.6.rn-render8'
+    compileOnly 'io.imqa:imqa-mpm-client:2.27.6.rn-render10'
 
 //    compileOnly 'io.imqa:imqa-crash-client:2.27.0'
 }
