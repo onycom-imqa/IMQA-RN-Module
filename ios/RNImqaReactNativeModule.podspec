@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   RNImqaReactNativeModule
                    DESC
-  s.homepage     = ""
+  s.homepage     = "https://github.com/onycom-imqa/IMQA-RN-Module"
   s.license      = "AGPL-3.0"
   s.author       = { "author" => "admin@imqa.io" }
   s.platform     = :ios, "11.0"
