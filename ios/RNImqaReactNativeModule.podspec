@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license      = "AGPL-3.0"
   s.author       = { "author" => "admin@imqa.io" }
   s.platform     = :ios, "11.0"
-  s.source       = { :git => "https://github.com/author/RNImqaReactNativeModule.git", :tag => "master" }
+  s.source       = { :git => "https://github.com/onycom-imqa/IMQA-RN-Module.git", :tag => "develop" }
   s.source_files  = "RNImqaReactNativeModule/**/*.{h,m}"
   s.requires_arc = true
 
@@ -21,5 +21,3 @@ Pod::Spec.new do |s|
   #s.dependency "others"
 
 end
-
-  
