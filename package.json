@@ -1,6 +1,6 @@
 {
-  "name": "imqa-react-native-module",
-  "version": "1.0.2",
+  "name": "react-native-module-sample",
+  "version": "1.0.20",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,9 +12,9 @@
   "author": "",
   "license": "",
   "devDependencies": {
-    "react-native": "0.41.2"
+    "react-native": "*"
   },
   "peerDependencies": {
-    "react-native": "^0.41.2"
+    "react-native": "*"
   }
 }

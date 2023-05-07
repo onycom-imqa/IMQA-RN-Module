@@ -17,16 +17,16 @@ import io.imqa.mpm.IMQAMpmAgent;
 import io.imqa.mpm.collector.BehaviorFileManager;
 import io.imqa.mpm.collector.CollectorManager;
 
-public class RNMpmAgentModule extends ReactContextBaseJavaModule {
+public class MpmAgent extends ReactContextBaseJavaModule {
 
-  RNMpmAgentModule(ReactApplicationContext context) {
+  MpmAgent(ReactApplicationContext context) {
     super(context);
   }
   private HttpData httpData = null;
 
   @Override
   public String getName() {
-    return "RNMpmAgentModule";
+    return "MpmAgent";
   }
 
   @ReactMethod
@@ -43,13 +43,13 @@ public class RNMpmAgentModule extends ReactContextBaseJavaModule {
   @ReactMethod
   public void startReactNativeRender(String componentName,boolean isParents) {
     IMQAMpmAgent.getInstance().startComponentRender(componentName,isParents);
-    Logger.d("RNMpmAgentModule", "startReactNativeRender: " + componentName + " / " + isParents);
+    Logger.d("MpmAgent", "startReactNativeRender: " + componentName + " / " + isParents);
   }
 
   @ReactMethod
   public void endReactNativeRender(String componentName, boolean isParents) {
     IMQAMpmAgent.getInstance().endComponentRender(componentName, isParents);
-    Logger.d("RNMpmAgentModule", "endReactNativeRender: " + componentName + " / " + isParents);
+    Logger.d("MpmAgent", "endReactNativeRender: " + componentName + " / " + isParents);
   }
 
   /**
@@ -67,7 +67,7 @@ public class RNMpmAgentModule extends ReactContextBaseJavaModule {
     httpData.setPathName(pathName);
     httpData.setMethod(method);
     httpData.setProtocol(protocol);
-    Logger.d("RNMpmAgentModule", "startReactNativeNetwork");
+    Logger.d("MpmAgent", "startReactNativeNetwork");
   }
 
   /**
@@ -81,6 +81,6 @@ public class RNMpmAgentModule extends ReactContextBaseJavaModule {
     RNHttpResponseData data = new RNHttpResponseData(httpData);
     data.setBehaviorTxId(BehaviorFileManager.getInstance().getCurrentBehavior().getBehaviorTxId());
     CollectorManager.getInstance().collect(data);
-    Logger.d("RNMpmAgentModule", "endReactNativeNetwork");
+    Logger.d("MpmAgent", "endReactNativeNetwork");
   }
 }
