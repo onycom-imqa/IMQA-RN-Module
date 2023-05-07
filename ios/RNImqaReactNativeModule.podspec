@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
 
 
   s.dependency "React"
+  s.dependency "IMQAMPMAgent", '3.23.0'
+  s.dependency "IMQACrashAgent", '3.13.0'
   #s.dependency "others"
 
 end
