@@ -8,14 +8,12 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 
 import io.imqa.core.behavior.BehaviorData;
-import io.imqa.core.dump.ActivityRenderData;
-import io.imqa.core.dump.react.RNHttpResponseData;
-import io.imqa.core.http.HttpCollector;
 import io.imqa.core.http.HttpData;
 import io.imqa.core.util.Logger;
 import io.imqa.mpm.IMQAMpmAgent;
 import io.imqa.mpm.collector.BehaviorFileManager;
 import io.imqa.mpm.collector.CollectorManager;
+import io.imqa.rn.module.dump.network.RNHttpResponseData;
 
 public class MpmAgent extends ReactContextBaseJavaModule {
 
@@ -42,14 +40,12 @@ public class MpmAgent extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void startReactNativeRender(String componentName,boolean isParents) {
-    IMQAMpmAgent.getInstance().startComponentRender(componentName,isParents);
-    Logger.d("MpmAgent", "startReactNativeRender: " + componentName + " / " + isParents);
+    IMQARNAgent.getInstance().startComponentRender(componentName,isParents);
   }
 
   @ReactMethod
   public void endReactNativeRender(String componentName, boolean isParents) {
-    IMQAMpmAgent.getInstance().endComponentRender(componentName, isParents);
-    Logger.d("MpmAgent", "endReactNativeRender: " + componentName + " / " + isParents);
+    IMQARNAgent.getInstance().endComponentRender(componentName, isParents);
   }
 
   /**

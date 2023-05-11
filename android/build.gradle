@@ -38,21 +38,21 @@ repositories {
     mavenCentral()
     jcenter()
     google()
-    maven {
-        url("http://nexus.imqa.io:8081/repository/maven-releases/")
-        allowInsecureProtocol(true)
-    }
+//    maven {
+//        url("http://nexus.imqa.io:8081/repository/maven-releases/")
+//        allowInsecureProtocol(true)
+//    }
 }
 
 dependencies {
     compileOnly 'com.facebook.react:react-native:+'
-    // imqa
-//    compileOnly 'io.imqa:imqa-core:2.27.0'
-//    compileOnly 'io.imqa:imqa-mpm-client:2.27.2'
-    compileOnly 'io.imqa:imqa-core:2.27.1.rn'
-    compileOnly 'io.imqa:imqa-crash-client:2.27.1.rn'
-    compileOnly 'io.imqa:imqa-mpm-client:2.27.6.rn'
 
-//    compileOnly 'io.imqa:imqa-crash-client:2.27.0'
+    // imqa
+    implementation 'io.imqa:imqa-core:2.27.1'
+    implementation 'io.imqa:imqa-crash-client:2.27.1'
+    implementation 'io.imqa:imqa-mpm-client:2.27.6'
+
+
+
 }
   
