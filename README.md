@@ -1,10 +1,10 @@
 
-# imqa-react-native-module
+# imqa-react-native-agent
 
 
 ## Getting started
 
-`$ npm install imqa-react-native-module --save`
+`$ npm install imqa-react-native-agent --save`
 
 ## Usage
 
@@ -13,7 +13,7 @@
 
 ```javascript
 
-import MpmAgent from ‘imqa-react-native-module’;
+import MpmAgent from ‘imqa-react-native-agent’;
 
 
 class ParentsComponent extends React.Component {
@@ -39,7 +39,7 @@ class ParentsComponent extends React.Component {
 
 ```javascript
 
-import MpmAgent from 'imqa-react-native-module';
+import MpmAgent from 'imqa-react-native-agent';
 
 
 class ChildComponent extends React.Component {
