@@ -1,13 +1,37 @@
 
 #import "RNImqaReactNativeModule.h"
+// #import <IMQAMPMAgent/IMQAMPMAgent.h>
 
 @implementation RNImqaReactNativeModule
 
-- (dispatch_queue_t)methodQueue
+RCT_EXPORT_MODULE(MpmAgent)
+
+RCT_EXPORT_METHOD(setBehaviorData:(NSString *)componentName)
 {
-    return dispatch_get_main_queue();
+    NSLog(@"[IMQA] SET BEHAVIOR DATA : %@", componentName);
 }
-RCT_EXPORT_MODULE()
+
+RCT_EXPORT_METHOD(startReactNativeRender:(NSString *)componentName)
+{
+    NSLog(@"[IMQA] START Component Render : %@", componentName);
+//   [[IMQAMpm sharedInstance] startScreen:screenName];
+}
+
+RCT_EXPORT_METHOD(endReactNativeRender:(NSString *)componentName)
+{
+    NSLog(@"[IMQA] END Component Render : %@", componentName);
+//   [[IMQAMpm sharedInstance] endScreen:screenName];
+}
+
+RCT_EXPORT_METHOD(startReactNativeNetwork:(NSString *)componentName)
+{
+    NSLog(@"[IMQA] START Network : %@", componentName);
+}
+
+RCT_EXPORT_METHOD(endReactNativeNetwork:(NSString *)componentName)
+{
+    NSLog(@"[IMQA] END Network : %@", componentName);
+}
 
 @end
   

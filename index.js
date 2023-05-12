@@ -1,6 +1,6 @@
 
 import { NativeModules } from 'react-native';
 
-const { RNMpmAgentModule } = NativeModules;
+const { MpmAgent } = NativeModules;
 
-export default RNMpmAgentModule;
+export default MpmAgent;
