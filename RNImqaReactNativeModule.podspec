@@ -11,10 +11,8 @@ Pod::Spec.new do |s|
   s.author       = { "author" => "admin@imqa.io" }
   s.platform     = :ios, "11.0"
   s.source       = { :git => "https://github.com/onycom-imqa/IMQA-RN-Module.git", :tag => "develop" }
-  s.source_files  = "RNImqaReactNativeModule/**/*.{h,m}"
+  s.source_files  = "ios/**/*.{h,m}"
   s.requires_arc = true
-
-
   s.dependency "React"
 #   s.dependency "IMQAMPMAgent", '3.23.0'
 #   s.dependency "IMQACrashAgent", '3.13.0'

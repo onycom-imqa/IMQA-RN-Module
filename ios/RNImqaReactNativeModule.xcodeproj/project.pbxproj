@@ -7,9 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7672D0350B9FE6FDE89390F7 /* Pods_RNImqaReactNativeModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687AB3DE1AB5F7D67F7BFFC4 /* Pods_RNImqaReactNativeModule.framework */; };
+		962BD9012A0DD92D00D4F26E /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962BD8F22A0DD69300D4F26E /* libReact.a */; };
 		B3E7B58A1CC2AC0600A0062D /* RNImqaReactNativeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNImqaReactNativeModule.m */; };
+		B3F2054D968EBF1912A082FB /* Pods_RNImqaReactNativeModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DBE8FD4C601CADCDA694DED /* Pods_RNImqaReactNativeModule.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		962BD8F12A0DD69300D4F26E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 962BD8E62A0DD69300D4F26E /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
+			remoteInfo = React;
+		};
+		962BD8F32A0DD69300D4F26E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 962BD8E62A0DD69300D4F26E /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28131D9B038B00D4039D;
+			remoteInfo = "React-tvOS";
+		};
+		962BD8F52A0DD69300D4F26E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 962BD8E62A0DD69300D4F26E /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3C059A1DE3340900C268FA;
+			remoteInfo = yoga;
+		};
+		962BD8F72A0DD69300D4F26E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 962BD8E62A0DD69300D4F26E /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3C06751DE3340C00C268FA;
+			remoteInfo = "yoga-tvOS";
+		};
+		962BD8F92A0DD69300D4F26E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 962BD8E62A0DD69300D4F26E /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9251DE5FBEC00167DC4;
+			remoteInfo = cxxreact;
+		};
+		962BD8FB2A0DD69300D4F26E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 962BD8E62A0DD69300D4F26E /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9321DE5FBEE00167DC4;
+			remoteInfo = "cxxreact-tvOS";
+		};
+		962BD8FD2A0DD69300D4F26E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 962BD8E62A0DD69300D4F26E /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD90B1DE5FBD600167DC4;
+			remoteInfo = jschelpers;
+		};
+		962BD8FF2A0DD69300D4F26E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 962BD8E62A0DD69300D4F26E /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9181DE5FBD800167DC4;
+			remoteInfo = "jschelpers-tvOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
@@ -25,11 +85,12 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNImqaReactNativeModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNImqaReactNativeModule.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		687AB3DE1AB5F7D67F7BFFC4 /* Pods_RNImqaReactNativeModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNImqaReactNativeModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DBE8FD4C601CADCDA694DED /* Pods_RNImqaReactNativeModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNImqaReactNativeModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		897CFE5108199A7259ADE7DB /* Pods-RNImqaReactNativeModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNImqaReactNativeModule.debug.xcconfig"; path = "Target Support Files/Pods-RNImqaReactNativeModule/Pods-RNImqaReactNativeModule.debug.xcconfig"; sourceTree = "<group>"; };
+		962BD8E62A0DD69300D4F26E /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RNImqaReactNativeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNImqaReactNativeModule.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNImqaReactNativeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNImqaReactNativeModule.m; sourceTree = "<group>"; };
-		CACFA7BEC3BFF9B6241DDEAC /* Pods-RNImqaReactNativeModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNImqaReactNativeModule.debug.xcconfig"; path = "Target Support Files/Pods-RNImqaReactNativeModule/Pods-RNImqaReactNativeModule.debug.xcconfig"; sourceTree = "<group>"; };
-		CB8FB1C5A5C225EDD66A1A7B /* Pods-RNImqaReactNativeModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNImqaReactNativeModule.release.xcconfig"; path = "Target Support Files/Pods-RNImqaReactNativeModule/Pods-RNImqaReactNativeModule.release.xcconfig"; sourceTree = "<group>"; };
+		B5734705A06F7DAC0EA14C43 /* Pods-RNImqaReactNativeModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNImqaReactNativeModule.release.xcconfig"; path = "Target Support Files/Pods-RNImqaReactNativeModule/Pods-RNImqaReactNativeModule.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7672D0350B9FE6FDE89390F7 /* Pods_RNImqaReactNativeModule.framework in Frameworks */,
+				962BD9012A0DD92D00D4F26E /* libReact.a in Frameworks */,
+				B3F2054D968EBF1912A082FB /* Pods_RNImqaReactNativeModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,23 +121,39 @@
 				B3E7B5891CC2AC0600A0062D /* RNImqaReactNativeModule.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				E11E7EB1D51DAC76ACD20DEC /* Pods */,
-				9258E48D418AE39975C6256E /* Frameworks */,
+				5F24EF96C4C40B17A00C6739 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		9258E48D418AE39975C6256E /* Frameworks */ = {
+		5F24EF96C4C40B17A00C6739 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				687AB3DE1AB5F7D67F7BFFC4 /* Pods_RNImqaReactNativeModule.framework */,
+				962BD8E62A0DD69300D4F26E /* React.xcodeproj */,
+				1DBE8FD4C601CADCDA694DED /* Pods_RNImqaReactNativeModule.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		962BD8E72A0DD69300D4F26E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				962BD8F22A0DD69300D4F26E /* libReact.a */,
+				962BD8F42A0DD69300D4F26E /* libReact.a */,
+				962BD8F62A0DD69300D4F26E /* libyoga.a */,
+				962BD8F82A0DD69300D4F26E /* libyoga.a */,
+				962BD8FA2A0DD69300D4F26E /* libcxxreact.a */,
+				962BD8FC2A0DD69300D4F26E /* libcxxreact.a */,
+				962BD8FE2A0DD69300D4F26E /* libjschelpers.a */,
+				962BD9002A0DD69300D4F26E /* libjschelpers.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		E11E7EB1D51DAC76ACD20DEC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CACFA7BEC3BFF9B6241DDEAC /* Pods-RNImqaReactNativeModule.debug.xcconfig */,
-				CB8FB1C5A5C225EDD66A1A7B /* Pods-RNImqaReactNativeModule.release.xcconfig */,
+				897CFE5108199A7259ADE7DB /* Pods-RNImqaReactNativeModule.debug.xcconfig */,
+				B5734705A06F7DAC0EA14C43 /* Pods-RNImqaReactNativeModule.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -87,7 +165,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNImqaReactNativeModule" */;
 			buildPhases = (
-				B0E998E00877FD4CF50E4133 /* [CP] Check Pods Manifest.lock */,
+				E843405CBF24B599022CB1EC /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -126,6 +204,12 @@
 			mainGroup = 58B511D21A9E6C8500147676;
 			productRefGroup = 58B511D21A9E6C8500147676;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 962BD8E72A0DD69300D4F26E /* Products */;
+					ProjectRef = 962BD8E62A0DD69300D4F26E /* React.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				58B511DA1A9E6C8500147676 /* RNImqaReactNativeModule */,
@@ -133,8 +217,67 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		962BD8F22A0DD69300D4F26E /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = 962BD8F12A0DD69300D4F26E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		962BD8F42A0DD69300D4F26E /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = 962BD8F32A0DD69300D4F26E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		962BD8F62A0DD69300D4F26E /* libyoga.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyoga.a;
+			remoteRef = 962BD8F52A0DD69300D4F26E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		962BD8F82A0DD69300D4F26E /* libyoga.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyoga.a;
+			remoteRef = 962BD8F72A0DD69300D4F26E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		962BD8FA2A0DD69300D4F26E /* libcxxreact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcxxreact.a;
+			remoteRef = 962BD8F92A0DD69300D4F26E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		962BD8FC2A0DD69300D4F26E /* libcxxreact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcxxreact.a;
+			remoteRef = 962BD8FB2A0DD69300D4F26E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		962BD8FE2A0DD69300D4F26E /* libjschelpers.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjschelpers.a;
+			remoteRef = 962BD8FD2A0DD69300D4F26E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		962BD9002A0DD69300D4F26E /* libjschelpers.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjschelpers.a;
+			remoteRef = 962BD8FF2A0DD69300D4F26E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXShellScriptBuildPhase section */
-		B0E998E00877FD4CF50E4133 /* [CP] Check Pods Manifest.lock */ = {
+		E843405CBF24B599022CB1EC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -207,7 +350,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -244,7 +386,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -253,7 +394,7 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CACFA7BEC3BFF9B6241DDEAC /* Pods-RNImqaReactNativeModule.debug.xcconfig */;
+			baseConfigurationReference = 897CFE5108199A7259ADE7DB /* Pods-RNImqaReactNativeModule.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../node_modules/react-native/React/**",
@@ -269,7 +410,7 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB8FB1C5A5C225EDD66A1A7B /* Pods-RNImqaReactNativeModule.release.xcconfig */;
+			baseConfigurationReference = B5734705A06F7DAC0EA14C43 /* Pods-RNImqaReactNativeModule.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../node_modules/react-native/React/**",
