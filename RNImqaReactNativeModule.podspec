@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.dependency "React"
   s.dependency "IMQAMPMAgent", '3.24.0'
-  s.dependency "IMQACrashAgent", '3.13.0'
+  s.dependency "IMQACrashAgent", '3.9.0'
   #s.dependency "others"
 
 end
