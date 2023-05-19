@@ -5,7 +5,7 @@ target 'RNImqaReactNativeModule' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'IMQAMPMAgent', '3.23.0'
+  pod 'IMQAMPMAgent', '3.24.0'
   pod 'IMQACrashAgent', '3.9.0'
 
   # Pods for RNImqaReactNativeModule
