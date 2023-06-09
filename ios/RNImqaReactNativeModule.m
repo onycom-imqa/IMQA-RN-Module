@@ -1,6 +1,6 @@
 
 #import "RNImqaReactNativeModule.h"
-// #import <IMQAMPMAgent/IMQAMPMAgent.h>
+#import <IMQAMPMAgent/IMQAMPMAgent.h>
 
 @implementation RNImqaReactNativeModule
 
@@ -11,16 +11,16 @@ RCT_EXPORT_METHOD(setBehaviorData:(NSString *)componentName)
     NSLog(@"[IMQA] SET BEHAVIOR DATA : %@", componentName);
 }
 
-RCT_EXPORT_METHOD(startReactNativeRender:(NSString *)componentName)
+RCT_EXPORT_METHOD(startReactNativeRender:(NSString *)componentName isParents:(BOOL)isParents)
 {
     NSLog(@"[IMQA] START Component Render : %@", componentName);
-//   [[IMQAMpm sharedInstance] startScreen:screenName];
+    [[IMQAMpm sharedInstance] startComponent:componentName :isParents];
 }
 
-RCT_EXPORT_METHOD(endReactNativeRender:(NSString *)componentName)
+RCT_EXPORT_METHOD(endReactNativeRender:(NSString *)componentName isParents:(BOOL)isParents)
 {
     NSLog(@"[IMQA] END Component Render : %@", componentName);
-//   [[IMQAMpm sharedInstance] endScreen:screenName];
+    [[IMQAMpm sharedInstance] endComponent:componentName :isParents];
 }
 
 RCT_EXPORT_METHOD(startReactNativeNetwork:(NSString *)componentName)
