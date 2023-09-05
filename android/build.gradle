@@ -44,9 +44,9 @@ dependencies {
     compileOnly 'com.facebook.react:react-native:+'
 
     // imqa
-    compileOnly 'io.imqa:imqa-core:2.27.1'
-    compileOnly 'io.imqa:imqa-crash-client:2.27.1'
-    compileOnly 'io.imqa:imqa-mpm-client:2.27.6'
+    compileOnly 'io.imqa:imqa-core:2.27.4'
+    compileOnly 'io.imqa:imqa-crash-client:2.27.4'
+    compileOnly 'io.imqa:imqa-mpm-client:2.27.8'
 
 }
   

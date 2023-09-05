@@ -41,7 +41,11 @@ public class IMQARNAgent {
                                 startComponentTime,
                                 endComponentTime
                         );
-                data.setBehaviorTxId(BehaviorFileManager.getInstance().getCurrentBehavior().getBehaviorTxId());
+
+                if (BehaviorFileManager.getInstance().getCurrentBehavior() != null){
+                    data.setBehaviorTxId(BehaviorFileManager.getInstance().getCurrentBehavior().getBehaviorTxId());
+                }
+
                 CollectorManager.getInstance().collect(data);
     }
 

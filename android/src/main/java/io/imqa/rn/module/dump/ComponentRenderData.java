@@ -10,6 +10,7 @@ import io.imqa.core.CoreContext;
 import io.imqa.core.dump.DumpData;
 import io.imqa.core.dump.Resource.activity.ActivityStack;
 import io.imqa.core.util.Logger;
+import io.imqa.rn.module.util.Common;
 
 public class ComponentRenderData implements DumpData {
 
@@ -19,7 +20,6 @@ public class ComponentRenderData implements DumpData {
     private Long endTime;
     private Boolean isParents; // 현재 컴포넌트가 최상위 컴포넌트인지
     String behaviorTxId;
-    String txId;
 
     public ComponentRenderData() {
         this.activityName = "";
@@ -27,14 +27,12 @@ public class ComponentRenderData implements DumpData {
         this.startTime = (long) 0;
         this.endTime= (long) 0;
         this.isParents = false;
-        txId = CoreContext.getInstance().getTxId();
     }
 
     public ComponentRenderData(String activityName, Long startTime, Long endTime) {
         this.activityName = activityName;
         this.startTime = startTime;
         this.endTime = endTime;
-        txId = CoreContext.getInstance().getTxId();
     }
 
     public ComponentRenderData(String componentName, boolean isParents, Long startTime, Long endTime){
@@ -42,7 +40,6 @@ public class ComponentRenderData implements DumpData {
         this.isParents = isParents;
         this.startTime = startTime;
         this.endTime = endTime;
-        txId = CoreContext.getInstance().getTxId();
     }
 
     public void setBehaviorTxId(String behaviorTxId) {
@@ -103,7 +100,7 @@ public class ComponentRenderData implements DumpData {
             renderData.put("end_time", getEndTime());
             renderData.put("behaviorTxId", behaviorTxId);
             renderData.put("is_parents", getParents());
-            renderData.put("txId", txId);
+            renderData.put("txId", Common.getTxId());
 
         } catch (JSONException e) {
             StringWriter stacktrace = new StringWriter();
