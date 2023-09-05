@@ -1,8 +1,10 @@
 # node.js
 node_modules/
 package-lock.json
-
+.idea
 ios/Pods/
 ios/Podfile.lock
 .DS_Store
 yarn.lock
+build/
+.gradle

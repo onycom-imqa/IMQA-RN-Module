@@ -8,20 +8,18 @@ import io.imqa.core.dump.DumpData;
 import io.imqa.core.dump.Resource.activity.ActivityStack;
 import io.imqa.core.http.HttpData;
 import io.imqa.rn.module.dump.ComponentStack;
+import io.imqa.rn.module.util.Common;
 
 public class RNHttpResponseData implements DumpData {
     HttpData httpData;
     String behaviorTxId;
-    String txId;
 
     public void setBehaviorTxId(String behaviorTxId) {
         this.behaviorTxId = behaviorTxId;
-        this.txId = CoreContext.getInstance().getTxId();
     }
 
     public RNHttpResponseData(HttpData httpData) {
         this.httpData = httpData;
-        this.txId = CoreContext.getInstance().getTxId();
     }
 
     @Override
@@ -42,7 +40,7 @@ public class RNHttpResponseData implements DumpData {
             httpResponseData.put("protocol", httpData.getProtocol());
             httpResponseData.put("port", httpData.getPort());
             httpResponseData.put("behaviorTxId", behaviorTxId);
-            httpResponseData.put("txId", txId);
+            httpResponseData.put("txId", Common.getTxId());
             httpResponseData.put("screen_name", ActivityStack.getInstance().getCurrentActivity());
             httpResponseData.put("component_name", ComponentStack.getInstance().getCurrentComponent());
 
